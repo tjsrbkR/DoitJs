@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1번문제
+      function registerInfo() {
+        let register = {
+          name: "홍길동",
+          id: "1",
+          나이: "25",
+          주소: "서울",
+        };
+        document.write("<h1>" + register.name + "</h1>");
+        document.write("<li>id : " + register.id + " </li>");
+        document.write("<li>나이 : " + register.나이 + " </li>");
+        document.write("<li>주소 : " + register.주소 + " </li></ul>");
+      }
+
+      //2번문제
+      function circle() {
+        let cm = prompt("원의 반지름은? :");
+        let area = cm * cm * Math.PI;
+        let Round = cm * 2 * Math.PI;
+
+        document.write("반지름이 " + cm + "일떄 <br>");
+        document.write("원의 넓이 약 : " + Math.floor(area) + "<br>");
+        document.write("원의 둘레 약 : " + Math.floor(Round));
+      }
+    </script>
+  </body>
+</html>

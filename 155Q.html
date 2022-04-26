@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // 1번 문제
+    function sumMulti(a, b) {
+      a = 5;
+      b = 10;
+      let i = 0;
+      if (a === b) {
+        i = a * b;
+      } else {
+        i = a + b;
+      }
+      console.log(i);
+    }
+    //2번 문제
+    function better() {
+      let inputNum = prompt("비교할 첫번째 숫자");
+      let inputSecondNum = prompt("비교할 두번째 숫자");
+      if (inputNum > inputSecondNum) {
+        alert(inputNum + "(이)가 " + inputSecondNum + "보다 큽니다. ");
+      } else {
+        alert(inputSecondNum + "(이)가 " + inputNum + "보다 큽니다. ");
+      }
+    }
+    //사용자 지정 객체 및 인스턴스 활용하기
+    function Book(author, pages, price, title) {
+      this.author = author;
+      this.pages = pages;
+      this.price = price;
+      this.title = title;
+    }
+    jsBook = new Book("홍길동", "500", "15,000", "동화");
+    console.log(jsBook);
+  </script>
+</html>

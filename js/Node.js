@@ -8,17 +8,15 @@ function newRegister(){
     delBttn.setAttribute("class","del");
     delBttn.appendChild(delText);
     newp.appendChild(delBttn);
-
-
-
     let nameList = document.querySelector("#nameList");  
     nameList.insertBefore(newp, nameList.childNodes[0]);
     userName.value = "";
-
-}
-function DeleteRegister(){
-
-    let firstDel = document.querySelectorAll(".del");
-    let firstP = document.querySelectorAll("p");
-    
+    let removeBttn = document.querySelectorAll(".del");
+    for(let i =0; i<removeBttn.length;i++){
+        removeBttn[i].addEventListener("click",()=>{
+            if(this.parentNode.parentNode){
+                this.parentNode.parentNode.removeChild(this.parentNode);
+            }
+        });
+    }
 }
